@@ -1,7 +1,5 @@
 package com.hooooong.jsondata;
 
-import android.graphics.Bitmap;
-import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.hooooong.jsondata.model.User;
 
 import java.util.List;
@@ -65,11 +64,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder> {
         }
 
         public void setImageView(final String imageUrl) {
-            /*
             Glide.with(itemView.getContext())
                     .load(imageUrl)
                     .into(imageView);
-            */
+            /*
             new AsyncTask<Void, Void, Bitmap>(){
                 @Override
                 protected void onPreExecute() {
@@ -87,6 +85,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder> {
                     imageView.setImageBitmap(bitmap);
                 }
             }.execute();
+            */
         }
     }
 }

@@ -9,10 +9,13 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.hooooong.jsondata.model.User;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             protected void onPostExecute(String jsonString) {
                 progressBar.setVisibility(View.GONE);
                 //JSONString 을 Parsing 하여 List 에 넣어둔다.
-                gsonParse(jsonString);
+                simpleGsonParse(jsonString);
                 setList();
             }
 
@@ -117,18 +120,15 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param jsonString
      */
-    /*
     private void simpleGsonParse(String jsonString){
-        userList = new ArrayList<>();
+        Type type = new TypeToken<List<User>>(){}.getType();
         Gson gson = new Gson();
-        userList = gson.toJson(jsonString);
+        userList = gson.fromJson(jsonString, type);
     }
-    */
 
     private void setList(){
         ListAdapter listAdapter = new ListAdapter(userList);
         recyclerView.setAdapter(listAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
 }
