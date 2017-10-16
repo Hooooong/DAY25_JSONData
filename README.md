@@ -3,7 +3,7 @@
 ### 설명
 ____________________________________________________
 
-![HTTPConnection]()
+![HTTPConnection](https://github.com/Hooooong/DAY25_JSONData/blob/master/image/JsonData.gif)
 
 - HTTPConnection 예제
 - [https://api.github.com/users](https://api.github.com/users) 에 있는 데이터 (JSON 형식) 를 Parsing 하여 RecyclerView 에 출력
