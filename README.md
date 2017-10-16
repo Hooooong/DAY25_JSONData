@@ -6,7 +6,7 @@ ____________________________________________________
 ![HTTPConnection](https://github.com/Hooooong/DAY25_JSONData/blob/master/image/JsonData.gif)
 
 - HTTPConnection 예제
-- [https://api.github.com/users](https://api.github.com/users) 에 있는 데이터 (JSON 형식) 를 Parsing 하여 RecyclerView 에 출력
+- URL([https://api.github.com/users](https://api.github.com/users)) 에 있는 데이터 (JSON 형식) 를 Parsing 하여 RecyclerView 에 출력
 
 ### KeyPoint
 ____________________________________________________
@@ -19,7 +19,7 @@ ____________________________________________________
 
   - 참조 : [AsyncTask](https://github.com/Hooooong/DAY25_HTTPConnect#asynctask)
 
-- Glide(Image Loader Library)
+- Glide (Image Loader Library)
 
   - URL 이미지를 ImageView 에 그려주기 위해서는 Bitmap 으로 변환하여 넣어야 한다.
 
@@ -95,9 +95,9 @@ ____________________________________________________
 
 - JSON ( JavaScript Object Notation )
 
-  > JSON(제이슨[1], JavaScript Object Notation)은 속성-값 쌍으로 이루어진 데이터 오브젝트를 전달하기 위해 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷이다. 비동기 브라우저/서버 통신 (AJAX)을 위해, 넓게는 XML(AJAX가 사용)을 대체하는 주요 데이터 포맷이다. 특히, 인터넷에서 자료를 주고 받을 때 그 자료를 표현하는 방법으로 알려져 있다. 자료의 종류에 큰 제한은 없으며, 특히 컴퓨터 프로그램의 변수값을 표현하는 데 적합하다
+  > JSON(JavaScript Object Notation)은 속성-값 쌍으로 이루어진 데이터 오브젝트를 전달하기 위해 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷이다. 비동기 브라우저/서버 통신 (AJAX)을 위해, 넓게는 XML(AJAX가 사용)을 대체하는 주요 데이터 포맷이다. 특히, 인터넷에서 자료를 주고 받을 때 그 자료를 표현하는 방법으로 알려져 있다. 자료의 종류에 큰 제한은 없으며, 특히 컴퓨터 프로그램의 변수값을 표현하는 데 적합하다
 
-  - json 형식
+  - JSON 형식
 
   ```JSON
   [
@@ -122,7 +122,7 @@ ____________________________________________________
   ]
   ```
 
-  - GSON(JSON Parsing Library)
+  - GSON (JSON Parsing Library)
 
     - GSON이란 java 에서 제공하는 JSON API 보다 좀 더 효율적이고, 속도가 빠른 Parsing Library 이다.
 
