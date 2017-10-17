@@ -122,6 +122,30 @@ ____________________________________________________
   ]
   ```
 
+  ```java
+  Noname items[] = new Noname()[2];
+  items[0] = new Noname();
+  items[1] = new Noname();
+
+  // 이름이 없는 이유는
+  // 개발자가 임의로 지어줄 수 있다
+  Class Noname{
+    String 이름;
+    int 나이;
+    String 성별;
+    String 주소;
+    String 특기;
+    가족관계 가족관계 = new 가족관계();
+    String 회사;
+  }
+
+  Class 가족관계{
+    int #;
+    String 아버지;
+    String 어머니;
+  }
+  ```
+
   - GSON (JSON Parsing Library)
 
     - GSON이란 java 에서 제공하는 JSON API 보다 좀 더 효율적이고, 속도가 빠른 Parsing Library 이다.
@@ -130,7 +154,7 @@ ____________________________________________________
 
     ```java
     /**
-     * GSON Library 를 사용하여, JSON 을 Parsing 하는 메소드 (하나의 문단)
+     * GSON Library 를 사용하여, JSON 을 Parsing 하는 메소드 (하나의 문단 을 객체로 변경)
      *
      * @param jsonString
      */
