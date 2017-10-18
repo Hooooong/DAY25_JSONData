@@ -84,6 +84,14 @@ ____________________________________________________
 
   - 이러한 작업들을 처리해주고, Image 를 좀 더 빠르게 Load 할 수 있게 나온 Library 가 `Glide` 이다.
 
+  - Gradle 설정
+
+  ```Gradle
+  complie 'com.github.bumptech.glide:glide:3.+'
+  ```
+
+  - 사용 방법
+
   ```java
   // Glide 실행 방법
   Glide.with(context)
@@ -152,7 +160,13 @@ ____________________________________________________
 
     - GSON이란 java 에서 제공하는 JSON API 보다 좀 더 효율적이고, 속도가 빠른 Parsing Library 이다.
 
-    - 사용법
+    - Gradle 설정
+
+    ```Gradle
+    compile 'com.google.coe.gson:gson:2.8.2'
+    ```
+
+    - 사용 방법
 
     ```java
     /**
